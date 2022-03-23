@@ -83,11 +83,14 @@ class _HomePageState extends State<HomePage>
                       }
                     });
                   },
-                  child: Lottie.asset(
-                    "assets/print_lottie.json",
-                    height: 150.0,
+                  child: SizedBox(
                     width: 150.0,
-                    controller: _controller,
+                    height: 150.0,
+                    child: Lottie.asset(
+                      "assets/print_lottie.json",
+                      controller: _controller,
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 )
               ],
